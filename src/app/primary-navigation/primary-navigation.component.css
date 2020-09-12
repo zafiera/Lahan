@@ -1,0 +1,22 @@
+nav {
+  background-color: transparent;
+  width: 100%;
+  /*position: absolute;*/
+  z-index: 1;
+}
+
+.nav-item {
+  font-family: Arial, sans-serif;
+  margin: 0 25px;
+  color: #000000;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 786px) {
+  nav {
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    z-index: auto;
+  }
+}

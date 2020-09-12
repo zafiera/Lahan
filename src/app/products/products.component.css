@@ -1,0 +1,46 @@
+.product-card {
+  padding: 5px;
+  margin-bottom: 50px;
+  box-shadow: none;
+  /*transform: scale(0.95);*/
+  /*transition: box-shadow 0.5s, transform 0.5s;*/
+}
+
+.product-card:hover {
+  cursor: pointer;
+  /*transform: scale(1);*/
+  /*box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);*/
+}
+
+.product-name {
+  font-size: 16px;
+}
+
+.product-price {
+  font-size: 12px;
+}
+
+.hovercard-overlay {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.hovercard-overlay {
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background: rgba(70, 70, 70, .85);
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.hovercard:hover .hovercard-overlay {
+  opacity: 1;
+  text-decoration: none;
+}
+

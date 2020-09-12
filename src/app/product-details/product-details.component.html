@@ -1,0 +1,50 @@
+<app-primary-navigation></app-primary-navigation>
+<main *ngIf="product">
+  <div class="container">
+    <div class="row product">
+      <div class="column-xs-12 col-md-7">
+        <div class="product-gallery">
+          <div class="product-image">
+            <img class="active" src="../../assets/products/{{product.productImage}}">
+          </div>
+<!--          <ul class="image-list">-->
+<!--            <li class="image-item"><img src="https://source.unsplash.com/W1yjvf5idqA"></li>-->
+<!--            <li class="image-item"><img src="https://source.unsplash.com/VgbUxvW3gS4"></li>-->
+<!--            <li class="image-item"><img src="https://source.unsplash.com/5WbYFH0kf_8"></li>-->
+<!--          </ul>-->
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <h1>{{product.productName}}</h1>
+        <h2>{{product.productFriendlyPrice}}</h2>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        </div>
+        <button class="add-to-cart">Add To Cart</button>
+        <a href="https://wa.me/+27639237486?text=Hey! Check out this beautiful scarf by Lahan http://localhost:4200/product-details/N1UDrs9hk1k0gYuZ47fb" target="_blank"><span><i class="fa fa-whatsapp"></i></span></a>
+      </div>
+    </div>
+    <div class="row related-products">
+      <div class="col-xs-12 col-md-12">
+        <h3>You may also like</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="https://source.unsplash.com/miziNqvJx5M">
+        <h4>Succulent</h4>
+        <p class="price">$19.99</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="https://source.unsplash.com/2y6s0qKdGZg">
+        <h4>Terranium</h4>
+        <p class="price">$19.99</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="https://source.unsplash.com/6Rs76hNbIWE">
+        <h4>Cactus</h4>
+        <p class="price">$19.99</p>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>
