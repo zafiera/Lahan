@@ -9,17 +9,28 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductDetailsComponent implements OnInit {
 
+counter = 0;
   product;
   constructor(
     private db: AngularFirestore,
     private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+
+
     const productId = this.activatedRoute.snapshot.paramMap.get('product-id');
 
     this.db.collection('products').doc(productId).valueChanges().subscribe(product => {
       this.product = product;
     });
+  }
+
+  plus(){
+    this.counter++;
+  }
+
+  minus(){
+    this.counter --;
   }
 
 }

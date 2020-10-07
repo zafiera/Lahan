@@ -15,7 +15,10 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
 import {AngularFireModule} from "@angular/fire";
 import {environment} from "../environments/environment.prod";
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { FormsModule  } from "@angular/forms"; 
 import {MatIconModule} from "@angular/material";
+import {MatSliderModule} from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 const appRoutes: Routes = [
@@ -45,7 +48,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    FormsModule,
     MatIconModule,
+    MatSliderModule,
+    MatFormFieldModule,
   ],
   exports: [
     RouterModule
