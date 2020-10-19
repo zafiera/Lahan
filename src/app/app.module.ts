@@ -19,12 +19,14 @@ import { FormsModule  } from "@angular/forms";
 import {MatIconModule} from "@angular/material";
 import {MatSliderModule} from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'products', component: ProductsComponent},
-  { path: 'product-details/:product-id', component: ProductDetailsComponent}
+  { path: 'product-details/:product-id', component: ProductDetailsComponent},
+  { path: 'shopping-cart', component: ShoppingCartComponent},
 ];
 
 
@@ -40,6 +42,7 @@ const appRoutes: Routes = [
     FooterComponent,
     ProductsComponent,
     ProductDetailsComponent,
+    ShoppingCartComponent,
   ],
   imports: [
     BrowserModule,

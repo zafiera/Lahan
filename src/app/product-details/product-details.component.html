@@ -1,5 +1,5 @@
 <app-primary-navigation></app-primary-navigation>
-<main *ngIf="product">
+<main *ngIf="product; let i=index;">
   <div class="container">
     <div class="row product">
       <div class="column-xs-12 col-md-7">
@@ -32,7 +32,7 @@
           <button (click)=plus()><i class='fas fa-plus'></i></button></p>
         </div>
 
-        <button class="add-to-cart">Add To Cart</button>
+        <button class="add-to-cart" (click)="addToCart(product)">Add To Cart</button>
         <hr>
 
         <p>Share: <i class='fab fa-facebook-f'></i><i class='fab fa-twitter'></i></p>
@@ -62,4 +62,6 @@
     </div>
   </div>
 </main>
+
+
 <app-footer></app-footer>
